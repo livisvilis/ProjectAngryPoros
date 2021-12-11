@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
-    private static int _nextLevelIndex = 1;
+    //private static int _nextLevelIndex = 1;
     private Enemy[] _enemies;
 
     private void OnEnable()
@@ -22,8 +22,8 @@ public class LevelController : MonoBehaviour
 
         Debug.Log("You killed all enemies");
 
-        _nextLevelIndex++;
-        string nextLevelName = "Level" + _nextLevelIndex;
-        SceneManager.LoadScene(nextLevelName);
+        //_nextLevelIndex++;
+        //string nextLevelName = "Level" + _nextLevelIndex;
+        SceneManager.LoadScene("NextLevel");
     }
 }
