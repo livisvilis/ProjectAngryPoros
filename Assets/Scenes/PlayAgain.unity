@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824416005}
         m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
-        m_MethodName: Next
+        m_MethodName: PlayAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2fb95358c39f2cc418491b7312cacc65, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73febf14cc62c0a40a98698425d54917, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

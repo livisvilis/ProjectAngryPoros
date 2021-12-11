@@ -13,4 +13,9 @@ public class NextLevel : MonoBehaviour
         string nextLevelName = "Level" + _nextLevelIndex;
         SceneManager.LoadScene(nextLevelName);
     }
+    public void PlayAgain()
+    {
+        _nextLevelIndex = 1;
+        SceneManager.LoadScene("Level1");
+    }
 }
