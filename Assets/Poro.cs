@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Poro : MonoBehaviour
 {
     private Vector3 _initialPosition;
-    private bool _birdWasLaunched;
+    private bool _poroWasLaunched;
     private float _timeSittingAround;
 
     [SerializeField] private float _launchPower = 500;
@@ -21,7 +21,7 @@ public class Poro : MonoBehaviour
         GetComponent<LineRenderer>().SetPosition(1, _initialPosition);
         GetComponent<LineRenderer>().SetPosition(0, transform.position);
 
-        if (_birdWasLaunched &&
+        if (_poroWasLaunched &&
             GetComponent<Rigidbody2D>().velocity.magnitude <= 0.1)
         {
             _timeSittingAround += Time.deltaTime;
@@ -50,7 +50,7 @@ public class Poro : MonoBehaviour
         Vector2 directionToInitialPosition = _initialPosition - transform.position;
         GetComponent<Rigidbody2D>().AddForce(directionToInitialPosition * _launchPower);
         GetComponent<Rigidbody2D>().gravityScale = 1;
-        _birdWasLaunched = true;
+        _poroWasLaunched = true;
 
         GetComponent<LineRenderer>().enabled = false;
     }
